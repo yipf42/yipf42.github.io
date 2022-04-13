@@ -1,0 +1,17 @@
+{
+  "name": "yipf42.github.io",
+  "version": "1.0.0",
+  "description": "say something",
+  "main": "index.js",
+  "repository": "git@github.com:yipf42/yipf42.github.io.git",
+  "author": "yipf42 <yipf42@gmail.com>",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs",
+    "deploy": "./deploy.sh"
+  },
+  "devDependencies": {
+    "vitepress": "^0.22.3"
+  }
+}
