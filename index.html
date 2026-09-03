@@ -3,7 +3,209 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>quruirui.com</title>
+    <meta name="description" content="QURU RUI 摄影集——关于自然、城市与寂静瞬间的视觉档案。">
+    <meta name="theme-color" content="#10100f">
+    <title>QURU RUI — Photography Archive</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,400;1,500&family=Manrope:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <a class="skip-link" href="#works">跳到作品</a>
+
+    <header class="site-header" data-header>
+      <a class="wordmark" href="#top" aria-label="QURU RUI 首页">
+        <span>QURU</span><i></i><span>RUI</span>
+      </a>
+      <nav class="desktop-nav" aria-label="主导航">
+        <a href="#featured">精选</a>
+        <a href="#works">作品</a>
+        <a href="#about">关于</a>
+      </nav>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">
+        <span>菜单</span><i></i><i></i>
+      </button>
+    </header>
+
+    <nav class="mobile-menu" id="mobile-menu" aria-label="移动端导航" aria-hidden="true">
+      <a href="#featured">精选</a>
+      <a href="#works">作品</a>
+      <a href="#about">关于</a>
+      <p>Fine art photography<br>Quru Rui, China</p>
+    </nav>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img class="hero-image" src="assets/photos/hero-mist.webp" alt="云雾在山林间缓慢流动" fetchpriority="high">
+        <div class="hero-shade"></div>
+        <div class="hero-index" aria-hidden="true">NO. 01<br>— 2026</div>
+        <div class="hero-copy reveal">
+          <p class="eyebrow">A quiet archive of light</p>
+          <h1 id="hero-title">凝视，<br><em>光落下的地方。</em></h1>
+          <p class="hero-note">关于自然、城市与时间的摄影练习。<br>每一帧，都是喧嚣之外的一次停留。</p>
+        </div>
+        <a class="scroll-cue" href="#featured"><span>向下探索</span><i aria-hidden="true"></i></a>
+      </section>
+
+      <section class="manifesto section-shell" id="featured">
+        <div class="section-kicker reveal"><span>01</span><p>Featured story</p></div>
+        <div class="manifesto-copy reveal">
+          <p class="small-label">本期展览 · SEPTEMBER 2026</p>
+          <h2>万物沉默时，<br><em>风景才开始说话。</em></h2>
+          <p>摄影不是解释世界，而是在它经过时，留下一点尚未消失的证据。我们收集那些安静、模糊、无法重复的片刻。</p>
+        </div>
+      </section>
+
+      <section class="feature-story section-shell" aria-label="精选作品">
+        <button class="feature-image image-button reveal" type="button" data-lightbox data-src="assets/photos/quiet-crossing.webp" data-title="Quiet Crossing" data-meta="Alberta · 2026">
+          <img src="assets/photos/quiet-crossing.webp" alt="独木舟上的旅行者面对寂静湖面" loading="lazy">
+          <span class="image-action">查看作品 <b>↗</b></span>
+        </button>
+        <div class="feature-caption reveal">
+          <span class="vertical-number">01 / 12</span>
+          <div>
+            <p class="small-label">FIELD NOTES / 001</p>
+            <h3>Quiet Crossing</h3>
+            <p>水面没有答案，只有一条通往远方的线。</p>
+            <dl>
+              <div><dt>地点</dt><dd>Alberta</dd></div>
+              <div><dt>年份</dt><dd>2026</dd></div>
+              <div><dt>系列</dt><dd>Solitude</dd></div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="works section-shell" id="works" aria-labelledby="works-title">
+        <div class="works-heading reveal">
+          <div>
+            <p class="small-label">CURATED SELECTION / 2024—2026</p>
+            <h2 id="works-title">Selected <em>Works</em></h2>
+          </div>
+          <p class="works-intro">十个片段，组成一段关于距离、尺度与凝视的叙事。</p>
+        </div>
+
+        <div class="filters reveal" role="group" aria-label="筛选作品">
+          <button class="filter is-active" type="button" data-filter="all">全部 <sup>10</sup></button>
+          <button class="filter" type="button" data-filter="landscape">风景 <sup>6</sup></button>
+          <button class="filter" type="button" data-filter="urban">城市 <sup>2</sup></button>
+          <button class="filter" type="button" data-filter="wildlife">生灵 <sup>2</sup></button>
+        </div>
+
+        <div class="gallery-grid">
+          <article class="work-card card-wide reveal" data-category="landscape">
+            <button class="image-button" type="button" data-lightbox data-src="assets/photos/after-rain.webp" data-title="After Rain" data-meta="Skógafoss · 2026">
+              <img src="assets/photos/after-rain.webp" alt="瀑布与雨后出现的彩虹" loading="lazy"><span class="image-action">打开 <b>↗</b></span>
+            </button>
+            <div class="work-meta"><h3>After Rain</h3><p>Skógafoss · 2026</p><span>01</span></div>
+          </article>
+
+          <article class="work-card card-tall reveal" data-category="wildlife">
+            <button class="image-button" type="button" data-lightbox data-src="assets/photos/wild-gaze.webp" data-title="Wild Gaze" data-meta="Masai Mara · 2025">
+              <img src="assets/photos/wild-gaze.webp" alt="凝视镜头的狮子" loading="lazy"><span class="image-action">打开 <b>↗</b></span>
+            </button>
+            <div class="work-meta"><h3>Wild Gaze</h3><p>Masai Mara · 2025</p><span>02</span></div>
+          </article>
+
+          <article class="work-card card-narrow reveal" data-category="urban">
+            <button class="image-button" type="button" data-lightbox data-src="assets/photos/between-walls.webp" data-title="Between Walls" data-meta="Chicago · 2025">
+              <img src="assets/photos/between-walls.webp" alt="两幢砖墙之间的城市小巷" loading="lazy"><span class="image-action">打开 <b>↗</b></span>
+            </button>
+            <div class="work-meta"><h3>Between Walls</h3><p>Chicago · 2025</p><span>03</span></div>
+          </article>
+
+          <article class="work-card card-wide reveal" data-category="landscape">
+            <button class="image-button" type="button" data-lightbox data-src="assets/photos/tidal-memory.webp" data-title="Tidal Memory" data-meta="North Sea · 2026">
+              <img src="assets/photos/tidal-memory.webp" alt="靠近水面的蓝色海浪" loading="lazy"><span class="image-action">打开 <b>↗</b></span>
+            </button>
+            <div class="work-meta"><h3>Tidal Memory</h3><p>North Sea · 2026</p><span>04</span></div>
+          </article>
+
+          <article class="work-card card-large reveal" data-category="landscape">
+            <button class="image-button" type="button" data-lightbox data-src="assets/photos/distant-house.webp" data-title="A Distant House" data-meta="Bavaria · 2024">
+              <img src="assets/photos/distant-house.webp" alt="群山间遥远的白色城堡" loading="lazy"><span class="image-action">打开 <b>↗</b></span>
+            </button>
+            <div class="work-meta"><h3>A Distant House</h3><p>Bavaria · 2024</p><span>05</span></div>
+          </article>
+
+          <article class="work-card card-medium reveal" data-category="landscape">
+            <button class="image-button" type="button" data-lightbox data-src="assets/photos/coastal-line.webp" data-title="Coastal Line" data-meta="Amalfi · 2025">
+              <img src="assets/photos/coastal-line.webp" alt="山崖与海岸线在薄雾中延伸" loading="lazy"><span class="image-action">打开 <b>↗</b></span>
+            </button>
+            <div class="work-meta"><h3>Coastal Line</h3><p>Amalfi · 2025</p><span>06</span></div>
+          </article>
+
+          <article class="work-card card-wide reveal" data-category="urban">
+            <button class="image-button" type="button" data-lightbox data-src="assets/photos/city-at-dusk.webp" data-title="City at Dusk" data-meta="Los Angeles · 2025">
+              <img src="assets/photos/city-at-dusk.webp" alt="黄昏时分的城市天际线" loading="lazy"><span class="image-action">打开 <b>↗</b></span>
+            </button>
+            <div class="work-meta"><h3>City at Dusk</h3><p>Los Angeles · 2025</p><span>07</span></div>
+          </article>
+
+          <article class="work-card card-medium reveal" data-category="landscape">
+            <button class="image-button" type="button" data-lightbox data-src="assets/photos/last-light.webp" data-title="Last Light" data-meta="Utah · 2024">
+              <img src="assets/photos/last-light.webp" alt="夕阳照亮红色荒原" loading="lazy"><span class="image-action">打开 <b>↗</b></span>
+            </button>
+            <div class="work-meta"><h3>Last Light</h3><p>Utah · 2024</p><span>08</span></div>
+          </article>
+
+          <article class="work-card card-large reveal" data-category="landscape">
+            <button class="image-button" type="button" data-lightbox data-src="assets/photos/stone-silence.webp" data-title="Stone Silence" data-meta="Yosemite · 2026">
+              <img src="assets/photos/stone-silence.webp" alt="高耸山谷与森林倒映在湖面" loading="lazy"><span class="image-action">打开 <b>↗</b></span>
+            </button>
+            <div class="work-meta"><h3>Stone Silence</h3><p>Yosemite · 2026</p><span>09</span></div>
+          </article>
+
+          <article class="work-card card-tall reveal" data-category="wildlife">
+            <button class="image-button" type="button" data-lightbox data-src="assets/photos/arctic-rest.webp" data-title="Arctic Rest" data-meta="Svalbard · 2024">
+              <img src="assets/photos/arctic-rest.webp" alt="冰岸上休憩的海象群" loading="lazy"><span class="image-action">打开 <b>↗</b></span>
+            </button>
+            <div class="work-meta"><h3>Arctic Rest</h3><p>Svalbard · 2024</p><span>10</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="quote-panel">
+        <div class="quote-image" aria-hidden="true"></div>
+        <blockquote class="reveal">
+          <p>“我拍摄的不是眼前所见，<br>而是目光离开后，<em>仍然留下的东西。</em>”</p>
+          <footer>— QURU RUI, PHOTOGRAPHER</footer>
+        </blockquote>
+      </section>
+
+      <section class="about section-shell" id="about">
+        <div class="section-kicker reveal"><span>03</span><p>About the archive</p></div>
+        <div class="about-grid">
+          <h2 class="reveal">在光与时间之间，<br><em>寻找安静的秩序。</em></h2>
+          <div class="about-copy reveal">
+            <p>QURU RUI 是一个持续生长的个人摄影档案。作品游走于自然景观、城市边缘与偶然相遇之间，关注空间如何改变人的感受。</p>
+            <p>当前页面为作品展示版本。关于项目、纸质收藏与合作计划，将在下一阶段逐步开放。</p>
+            <a href="mailto:hello@quruirui.com">hello@quruirui.com <span>↗</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="footer-mark" href="#top">QURU<em>·</em>RUI</a>
+      <div><p>Photography Archive</p><p>© <span data-year></span> Quru Rui</p></div>
+      <div><a href="#works">作品</a><a href="#about">关于</a><a href="mailto:hello@quruirui.com">联系</a></div>
+      <p class="placeholder-note">展示图片为占位素材，正式作品将在后续替换。</p>
+    </footer>
+
+    <dialog class="lightbox" id="lightbox" aria-label="作品大图">
+      <div class="lightbox-bar">
+        <p><span data-lightbox-title></span><small data-lightbox-meta></small></p>
+        <button type="button" data-lightbox-close aria-label="关闭大图">关闭 ×</button>
+      </div>
+      <div class="lightbox-stage">
+        <button type="button" class="lightbox-arrow prev" data-lightbox-prev aria-label="上一张">←</button>
+        <img src="" alt="">
+        <button type="button" class="lightbox-arrow next" data-lightbox-next aria-label="下一张">→</button>
+      </div>
+      <p class="lightbox-count" data-lightbox-count></p>
+    </dialog>
+  </body>
 </html>
